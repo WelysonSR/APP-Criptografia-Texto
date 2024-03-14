@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criptografia de Texto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Criptografia de Texto</h1>
+    <div class="container">
+      <textarea id="text" rows="4" placeholder="Digite seu texto"></textarea>
+      <div>
+        <input class="btn" type="button" id="encrypt" name="operation" value="Criptografar" />
+        <input class="btn" type="button" id="decrypt" name="operation" value="Descriptografar" />
+      </div>
+      
+      <div id="result"></div>
+      <button class="btn" id="copyBtn" style="display: none">
+        Copiar para Área de Transferência
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
