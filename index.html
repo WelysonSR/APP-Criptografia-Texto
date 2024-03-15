@@ -9,16 +9,32 @@
   <body>
     <h1>Criptografia de Texto</h1>
     <div class="container">
-      <textarea id="text" rows="4" placeholder="Digite seu texto"></textarea>
-      <div>
-        <input class="btn" type="button" id="encrypt" name="operation" value="Criptografar" />
-        <input class="btn" type="button" id="decrypt" name="operation" value="Descriptografar" />
-      </div>
-      
-      <div id="result"></div>
-      <button class="btn" id="copyBtn" style="display: none">
-        Copiar para Área de Transferência
-      </button>
+      <section class="section">
+        <textarea id="text" placeholder="Digite seu texto"></textarea>
+        <div>
+          <input
+            class="btn"
+            type="button"
+            id="encrypt"
+            name="operation"
+            value="Criptografar"
+          />
+          <input
+            class="btn"
+            type="button"
+            id="decrypt"
+            name="operation"
+            value="Descriptografar"
+          />
+        </div>
+      </section>
+
+      <section class="section">
+        <div id="result"></div>
+        <button class="btn" id="copyBtn" style="display: none">
+          Copiar para Área de Transferência
+        </button>
+      </section>
     </div>
 
     <script src="script.js"></script>
