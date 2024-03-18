@@ -2,40 +2,49 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Criptografia de Texto</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512- enacting +4zLKTyp a0z O+r se2q AQzmnvTqSA8jS+rbcsQVFT+GPEPBTViPxqMfHDgkqMgwe+T7 (?,&#x20; and&#x20; + zC+Y&#x20; + O=&#x20; mb-4)"
+    />
+    <title>Decodificador de Texto</title>
   </head>
   <body>
-    <h1>Criptografia de Texto</h1>
-    <div class="container">
-      <section class="section">
+    <header>
+      <img id="logo" src="img/image.png" />
+    </header>
+
+    <main class="container">
+      <section class="text">
         <textarea id="text" placeholder="Digite seu texto"></textarea>
-        <div>
-          <input
-            class="btn"
-            type="button"
-            id="encrypt"
-            name="operation"
-            value="Criptografar"
-          />
-          <input
-            class="btn"
-            type="button"
-            id="decrypt"
-            name="operation"
-            value="Descriptografar"
-          />
-        </div>
+        <button class="btn" id="encrypt" >Criptografar</button>
+        <button class="btn" id="decrypt" >Descriptografar</button>
       </section>
 
-      <section class="section">
-        <div id="result"></div>
+      <section class="result">
+        <div id="result">
+          <img id="pessoa" src="img/pessoa.png">
+          <h3>Nenhuma mensagem encontrada</h3>
+          <p>
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+        </div>
         <button class="btn" id="copyBtn" style="display: none">
-          Copiar para Área de Transferência
+          Copiar
         </button>
       </section>
-    </div>
+    </main>
+
+    <footer>
+      <samp>Desenvolvido por Welyson Rosa</samp>
+      <a href="https://www.linkedin.com/in/welysonrosa/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/WelysonSR" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </footer>
 
     <script src="script.js"></script>
   </body>
